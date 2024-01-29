@@ -13,6 +13,10 @@
 		AD5B255E2B677562001FDCA2 /* twitterCloneApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD5B255C2B677562001FDCA2 /* twitterCloneApp.xcdatamodeld */; };
 		AD5B25602B677564001FDCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5B255F2B677564001FDCA2 /* Assets.xcassets */; };
 		AD5B25632B677564001FDCA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5B25612B677564001FDCA2 /* LaunchScreen.storyboard */; };
+		AD5B256D2B6777F5001FDCA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B256C2B6777F5001FDCA2 /* HomeViewController.swift */; };
+		AD5B256F2B677803001FDCA2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B256E2B677803001FDCA2 /* SearchViewController.swift */; };
+		AD5B25712B67780F001FDCA2 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B25702B67780F001FDCA2 /* NotificationViewController.swift */; };
+		AD5B25732B67782C001FDCA2 /* DirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B25722B67782C001FDCA2 /* DirectMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AD5B255F2B677564001FDCA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5B25622B677564001FDCA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD5B25642B677564001FDCA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD5B256C2B6777F5001FDCA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AD5B256E2B677803001FDCA2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AD5B25702B67780F001FDCA2 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		AD5B25722B67782C001FDCA2 /* DirectMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		AD5B25522B677562001FDCA2 /* twitterCloneApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD5B256A2B6777D6001FDCA2 /* Controllers */,
 				AD5B25532B677562001FDCA2 /* AppDelegate.swift */,
 				AD5B25552B677562001FDCA2 /* SceneDelegate.swift */,
-				AD5B25572B677562001FDCA2 /* MainTabbarViewController.swift */,
 				AD5B255F2B677564001FDCA2 /* Assets.xcassets */,
 				AD5B25612B677564001FDCA2 /* LaunchScreen.storyboard */,
 				AD5B25642B677564001FDCA2 /* Info.plist */,
 				AD5B255C2B677562001FDCA2 /* twitterCloneApp.xcdatamodeld */,
 			);
 			path = twitterCloneApp;
+			sourceTree = "<group>";
+		};
+		AD5B256A2B6777D6001FDCA2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B256B2B6777E0001FDCA2 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD5B256B2B6777E0001FDCA2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B25572B677562001FDCA2 /* MainTabbarViewController.swift */,
+				AD5B256C2B6777F5001FDCA2 /* HomeViewController.swift */,
+				AD5B256E2B677803001FDCA2 /* SearchViewController.swift */,
+				AD5B25702B67780F001FDCA2 /* NotificationViewController.swift */,
+				AD5B25722B67782C001FDCA2 /* DirectMessageViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5B256F2B677803001FDCA2 /* SearchViewController.swift in Sources */,
+				AD5B25732B67782C001FDCA2 /* DirectMessageViewController.swift in Sources */,
+				AD5B256D2B6777F5001FDCA2 /* HomeViewController.swift in Sources */,
 				AD5B25582B677562001FDCA2 /* MainTabbarViewController.swift in Sources */,
+				AD5B25712B67780F001FDCA2 /* NotificationViewController.swift in Sources */,
 				AD5B255E2B677562001FDCA2 /* twitterCloneApp.xcdatamodeld in Sources */,
 				AD5B25542B677562001FDCA2 /* AppDelegate.swift in Sources */,
 				AD5B25562B677562001FDCA2 /* SceneDelegate.swift in Sources */,
